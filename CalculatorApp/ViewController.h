@@ -12,7 +12,8 @@
 {
     int firstNum;
     int secondNum;
-    IBOutlet UITextField *inputField;
+    IBOutlet UISwitch *powerButton;
+    IBOutlet UITextField *inputField;    
 }
 
     
@@ -21,5 +22,7 @@
 -(IBAction)numberButtons:(id)sender;
 -(IBAction)addButton:(id)sender;
 -(IBAction)equalsButton:(id)sender;
+-(IBAction)onSwitch:(id)sender;
+-(IBAction)bgChange:(id)sender;
 
 @end

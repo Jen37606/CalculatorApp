@@ -71,18 +71,33 @@
     inputField.text = @"";
 }
 
+//Power Button
+-(IBAction)onSwitch:(id)sender
+{
+    UISwitch *thisSwitch = (UISwitch*)sender;
+    if(thisSwitch != nil) // if it is off
+    {
+        NSLog(@"Test");
+        inputField.text = @"";
+    }
+}
+
+
 //numberButtons function
+
 -(IBAction)numberButtons:(id)sender
 {
     UIButton *thisButton = (UIButton*)sender;
     if(thisButton != nil)
     {
-        NSMutableString *currentInput = [[NSMutableString alloc] initWithString:inputField.text];
-        [currentInput appendString:thisButton.titleLabel.text];
-        inputField.text = currentInput;
+        if (powerButton.on != false)
+        {
+            NSMutableString *currentInput = [[NSMutableString alloc] initWithString:inputField.text];
+            [currentInput appendString:thisButton.titleLabel.text];
+            inputField.text = currentInput;
+        }
     }
 }
-
 //Add Button
 -(IBAction)addButton:(id)sender
 {
@@ -99,7 +114,6 @@
     inputField.text = addNumstoString;
 }
 
-
 // Info Button to go to SecondViewController
 -(IBAction)onClick:(id)sender
 {
@@ -107,6 +121,22 @@
     if(viewController != nil)
     {
         [self presentModalViewController:viewController animated:TRUE];
+    }
+}
+
+//background colors
+-(IBAction)bgChange:(id)sender
+{
+    UISegmentedControl *thisControl = (UISegmentedControl*)sender;
+    if (thisControl != nil)
+    {
+        if (thisControl.selectedSegmentIndex == 0) {
+            self.view.backgroundColor = [UIColor whiteColor];
+        } else if (thisControl.selectedSegmentIndex == 1) {
+            self.view.backgroundColor = [UIColor blueColor];
+        } else if (thisControl.selectedSegmentIndex == 2) {
+            self.view.backgroundColor = [UIColor purpleColor];
+        }
     }
 }
 
