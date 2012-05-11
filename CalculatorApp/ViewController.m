@@ -62,6 +62,30 @@
     }
 }
 
+
+//Clear button to clear input
+
+-(IBAction)clearButton:(id)sender
+{
+    firstNum = 0;
+    secondNum = 0;
+    inputField.text = @"";
+}
+
+//numberButtons function
+-(IBAction)numberButtons:(id)sender
+{
+    UIButton *thisButton = (UIButton*)sender;
+    if(thisButton != nil)
+    {
+        NSMutableString *currentInput = [[NSMutableString alloc] initWithString:inputField.text];
+        [currentInput appendString:thisButton.titleLabel.text];
+        inputField.text = currentInput;
+    }
+}
+
+
+// Info Button to go to SecondViewController
 -(IBAction)onClick:(id)sender
 {
     SecondViewController *viewController = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
