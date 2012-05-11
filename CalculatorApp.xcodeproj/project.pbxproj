@@ -16,6 +16,8 @@
 		9AC96C6F155C5F62006EC3F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC96C6E155C5F62006EC3F0 /* ViewController.m */; };
 		9AC96C72155C5F62006EC3F0 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AC96C70155C5F62006EC3F0 /* ViewController_iPhone.xib */; };
 		9AC96C75155C5F62006EC3F0 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AC96C73155C5F62006EC3F0 /* ViewController_iPad.xib */; };
+		9AC96C7C155C90F6006EC3F0 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AC96C7B155C90F6006EC3F0 /* SecondView.xib */; };
+		9AC96C7F155C9121006EC3F0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC96C7E155C9121006EC3F0 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,9 @@
 		9AC96C6E155C5F62006EC3F0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9AC96C71155C5F62006EC3F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		9AC96C74155C5F62006EC3F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		9AC96C7B155C90F6006EC3F0 /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
+		9AC96C7D155C9121006EC3F0 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		9AC96C7E155C9121006EC3F0 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +91,9 @@
 				9AC96C70155C5F62006EC3F0 /* ViewController_iPhone.xib */,
 				9AC96C73155C5F62006EC3F0 /* ViewController_iPad.xib */,
 				9AC96C62155C5F62006EC3F0 /* Supporting Files */,
+				9AC96C7B155C90F6006EC3F0 /* SecondView.xib */,
+				9AC96C7D155C9121006EC3F0 /* SecondViewController.h */,
+				9AC96C7E155C9121006EC3F0 /* SecondViewController.m */,
 			);
 			path = CalculatorApp;
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 				9AC96C66155C5F62006EC3F0 /* InfoPlist.strings in Resources */,
 				9AC96C72155C5F62006EC3F0 /* ViewController_iPhone.xib in Resources */,
 				9AC96C75155C5F62006EC3F0 /* ViewController_iPad.xib in Resources */,
+				9AC96C7C155C90F6006EC3F0 /* SecondView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +176,7 @@
 				9AC96C68155C5F62006EC3F0 /* main.m in Sources */,
 				9AC96C6C155C5F62006EC3F0 /* AppDelegate.m in Sources */,
 				9AC96C6F155C5F62006EC3F0 /* ViewController.m in Sources */,
+				9AC96C7F155C9121006EC3F0 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

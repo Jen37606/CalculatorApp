@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SecondViewController.h
 //  CalculatorApp
 //
 //  Created by Jennifer Johnson on 5/10/12.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-{
-    
-
-}
+@interface SecondViewController : UIViewController
 
 @end
