@@ -62,4 +62,13 @@
     }
 }
 
+-(IBAction)onClick:(id)sender
+{
+    SecondViewController *viewController = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
+    if(viewController != nil)
+    {
+        [self presentModalViewController:viewController animated:TRUE];
+    }
+}
+
 @end
