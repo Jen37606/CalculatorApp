@@ -64,7 +64,6 @@
 
 
 //Clear button to clear input
-
 -(IBAction)clearButton:(id)sender
 {
     firstNum = 0;
@@ -82,6 +81,22 @@
         [currentInput appendString:thisButton.titleLabel.text];
         inputField.text = currentInput;
     }
+}
+
+//Add Button
+-(IBAction)addButton:(id)sender
+{
+    firstNum = [inputField.text intValue];
+    inputField.text = @"";
+}
+
+//Equals Button
+-(IBAction)equalsButton:(id)sender
+{
+    secondNum = [inputField.text intValue];
+    int addNums = firstNum + secondNum;
+    NSString *addNumstoString = [NSString stringWithFormat:@"%d", addNums];
+    inputField.text = addNumstoString;
 }
 
 

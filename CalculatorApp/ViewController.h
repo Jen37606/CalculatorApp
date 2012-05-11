@@ -19,5 +19,7 @@
 -(IBAction)onClick:(id)sender;
 -(IBAction)clearButton:(id)sender;
 -(IBAction)numberButtons:(id)sender;
+-(IBAction)addButton:(id)sender;
+-(IBAction)equalsButton:(id)sender;
 
 @end
